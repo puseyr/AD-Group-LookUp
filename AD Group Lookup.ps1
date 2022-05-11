@@ -1,0 +1,2 @@
+﻿$UserCredential = Get-Credential #Get users Credentials to validate against domain.
+Get-ADPrincipalGroupMembership -identity "#TheGroupYouAreLookingFor" | select name | Export-csv -path '#PathToSaveFile#' -Notypeinformation
